@@ -1,12 +1,6 @@
 var http = require('http');
 var exec = require('child_process').exec; 
 
-var say_it = function(str) {
-	if (str.slice(0, 3) != 'say')
-		return ;
-	exec(str);
-}
-
 http.createServer(function (req, res) {
 	var body = "";
 	req.on('data', function (chunk) {
@@ -14,7 +8,7 @@ http.createServer(function (req, res) {
 	});
 	req.on('end', function () {
 		res.end();
-		say_it(body);
+		exec('say ' + body);
 	});
 }).listen(7788);
 
