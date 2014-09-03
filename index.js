@@ -4,7 +4,7 @@ var exec = require('child_process').exec;
 var say_it = function(str) {
 	if (str.slice(0, 3) != 'say')
 		return ;
-	var child = exec(str, function(err, stdout, stderr){});
+	exec(str);
 }
 
 http.createServer(function (req, res) {
