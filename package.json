@@ -1,0 +1,25 @@
+{
+  "name": "http-say",
+  "version": "0.1.0",
+  "description": "HTTP Server wrapping OSX say command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxdcn/http-say"
+  },
+  "keywords": [
+    "OSX",
+    "say",
+    "HTTP",
+    "node"
+  ],
+  "author": "lxd<i@lxd.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxdcn/http-say/issues"
+  },
+  "homepage": "https://github.com/lxdcn/http-say"
+}
